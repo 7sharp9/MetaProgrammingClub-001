@@ -6,4 +6,4 @@ tasks:
 vscode:
   extensions:
     - ms-vscode.csharp@1.21.1-beta1:n3X5MLk7F4gtlOJON1hmQQ==
-    - georgewfraser.fsharp-language-server@0.1.26:xXGsmZPt2bSdRTECYgQbvQ==
+    - Ionide.Ionide-fsharp@4.0.6:jY7uvWaRUfDGixUAwJWzOg==
