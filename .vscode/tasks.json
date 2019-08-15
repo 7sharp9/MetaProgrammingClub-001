@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build C#",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/csharp/MetaProgrammingClub-001.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "build F#",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/fsharp/MetaProgrammingClub-001.fsproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "publish C#",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/csharp/csharp.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "watch C#",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/csharp/csharp.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        }
+    ]
+}
