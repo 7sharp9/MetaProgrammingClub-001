@@ -26,4 +26,4 @@ ENV PATH="/root/.dotnet/tools:${PATH}"
 
 # Copy endpoint specific user settings into container to specify
 # .NET Core should be used as the runtime.
-COPY settings.vscode.json /root/.vscode-remote/data/Machine/settings.json
+# COPY settings.vscode.json /root/.vscode-remote/data/Machine/settings.json
