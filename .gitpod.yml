@@ -6,4 +6,5 @@ tasks:
 vscode:
   extensions:
     - ms-vscode.csharp@1.21.1-beta1:n3X5MLk7F4gtlOJON1hmQQ==
+    - vscode.@theia/vscode-builtin-fsharp@0.2.1:k+7gp7PhK55fA/5mBFb1Mw==
     - Ionide.Ionide-fsharp@4.0.6:jY7uvWaRUfDGixUAwJWzOg==
