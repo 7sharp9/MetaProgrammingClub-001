@@ -1,6 +1,7 @@
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2
 
+USER root
 # Add keys and sources lists
 RUN curl -sL https://deb.nodesource.com/setup_11.x | bash
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
@@ -15,6 +16,9 @@ RUN apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
+USER gitpod
+# Apply user-specific settings
+
 # Install fake
 RUN dotnet tool install fake-cli -g
 
@@ -27,3 +31,6 @@ ENV PATH="/root/.dotnet/tools:${PATH}"
 # Copy endpoint specific user settings into container to specify
 # .NET Core should be used as the runtime.
 # COPY settings.vscode.json /root/.vscode-remote/data/Machine/settings.json
+
+# Give back control
+USER root
