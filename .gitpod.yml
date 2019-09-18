@@ -1,4 +1,5 @@
-image: DockerFile
+image:
+  file: DockerFile
 
 tasks:
   - init: dotnet tool install --tool-path .paket Paket && export PATH=.paket:$PATH
