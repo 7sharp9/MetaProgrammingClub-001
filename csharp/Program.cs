@@ -6,7 +6,7 @@ namespace csharp
     public class Foo
     {
         public int Bar { get; set; }
-        public int Baz(int red, string green) => 0;
+        public int Baz(int red, string green) => 1;
     }
 
     class Program
